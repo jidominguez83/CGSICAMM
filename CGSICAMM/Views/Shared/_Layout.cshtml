@@ -13,7 +13,10 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: #e3f2fd;">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Coordinación General del SICAMM</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/gobslp.png" width="135px">
+                    Coordinación General del SICAMM     
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,28 +24,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Admisión</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Admisión</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Promoción</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Vertical</a></li>
-                                <li><a class="dropdown-item" href="#">Horizontal</a></li>
-                                <li><a class="dropdown-item" href="#">Horas adicionales</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Vertical</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Horizontal</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Horas adicionales</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Reconocimiento</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Tutoría</a></li>
-                                <li><a class="dropdown-item" href="#">AT/ATP</a></li>
-                                <li><a class="dropdown-item" href="#">Beca comisión</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Tutoría</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ProcesoLista">AT/ATP</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Beca comisión</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Notificaciones</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cambios de C.T.</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ProcesoLista">Cambios de C.T.</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="PruebaCarga" asp-action="CargaExcel">Carga de listas</a>
@@ -60,7 +63,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - Coordinación General del Sistema para la Carrera de las Maestras y los Maestros - <a asp-area="" asp-controller="Home" asp-action="Privacy">SEGE</a>
+            &copy; 2022 - Coordinación General del Sistema para la Carrera de las Maestras y los Maestros - Desarrollado por <a href="https://slp.gob.mx/sege/Paginas/Paginas/Inicio.aspx" target="_blank">SEGE</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

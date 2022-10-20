@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "SEGE | Listado de ordenamiento";
+}
+<div class="alert alert-primary" role="alert">
+    <i class="bi bi-exclamation-circle-fill"></i>&nbsp;
+    No existe en la base de datos ningún listado de ordenamiento con los criterios de búsqueda establecidos. Por favor, cárguela <a class="alert-link" asp-area="" asp-controller="PruebaCarga" asp-action="CargaExcel">aquí</a>.
+</div>
+
+<div class="container-xxl">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h3>Admisión, ciclo escolar
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-md example"
+                        id="select_ciclo">
+                        <option value="2013-2014">2013-2014</option>
+                        <option value="2014-2015">2014-2015</option>
+                        <option value="2015-2016">2015-2016</option>
+                        <option value="2016-2017">2016-2017</option>
+                        <option value="2017-2018">2017-2018</option>
+                        <option value="2018-2019">2018-2019</option>
+                        <option value="2019-2020">2019-2020</option>
+                        <option value="2020-2021">2020-2021</option>
+                        <option value="2021-2022">2021-2022</option>
+                        <option value="2022-2023">2022-2023</option>
+                    </select>
+                </h3>
+                <form name="valoracion_id" id="form_valoracion_id" method="GET" action="#">
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-md example"
+                        id="select_valoracion_id">
+                        <option value="0">- Selecciona el tipo de
+                            valoración -
+                        </option>
+                    </select>
+                    <input type="hidden" value="{{ $proceso_id }}" name="proceso_id" id="select_proceso_id">
+                </form>
+            </div>
+
+            <!--<table class="table table-striped table-hover">
+                
+                <thead>
+                    <tr>
+                        <th scope="col">CURP</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Puntaje global</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                
+
+                <tbody>
+                    
+                    <tr>
+                        <th scope="row">-</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a href="{{ route('participantes.detail-proceso', ['participacion_id' => $participante->participacion_id]) }}"
+                                    class="btn btn-success btn-sm"><i class="bi bi-eye-fill" title="Ver detalle"></i>
+                                </a>
+                                <a href="{{ route('participantes.details', ['participante_id' => $participante->participante_id]) }}"
+                                    class="btn btn-primary btn-sm"><i class="bi bi-file-earmark-person-fill" title="Ver datos completos del participante"></i>
+                                </a>
+                                <a href="{{ route('participantes.incidencias', ['participante_id' => $participante->participante_id, 'participacion_id' => $participante->participacion_id]) }}"
+                                    class="btn btn-secondary btn-sm"><i class="bi bi-exclamation-circle-fill" title="Incidencias"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            -->
+            <!-- Paginación -->
+
+        </div>
+    </div>
+</div>

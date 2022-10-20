@@ -18,7 +18,7 @@ namespace CGSICAMM.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult ProcesoLista()
         {
             return View();
         }
